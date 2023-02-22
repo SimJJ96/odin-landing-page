@@ -18,6 +18,21 @@ body {
     padding: 20px;
 }
 
+.contents {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    color: white;
+    padding: 20px;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+
 .footer {
     display: flex;
     justify-content: center;
@@ -32,6 +47,18 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+button.sign-up {
+    max-width: 100px;
+    background: royalblue;
+    border: 1px solid royalblue;
     color: white;
 }
 
