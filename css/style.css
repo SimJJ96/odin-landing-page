@@ -1,25 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
-    overflow: hidden;
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 4px 24px;
 }
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     background-color: #1F2937;
     padding: 20px;
 }
 
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    color: white;
+}
+
 .contents {
     display: flex;
+    flex-direction: right;
     justify-content: center;
     background-color: #1F2937;
     color: white;
@@ -29,20 +36,60 @@ body {
 .left-content {
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
-}
-
-
-.footer {
-    display: flex;
     justify-content: center;
-    background-color: #1F2937;
-    color: white;
+    align-self: flex-start;
+    max-width: 350px;
+    color: #F9FAF8;
 }
+.main-text {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.secondary-text {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
 .right-header {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-weight: bolder;
+    font-size: 36px;
+    color: #1F2937;
+}
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+    text-align: center;
+}
+
+.quote-information {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background: #E5E7EB;
+}
+
+.quote {
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-image {
+    border-radius: 30px;
+    border: 3px solid #3882F6;
 }
 
 a {
@@ -57,8 +104,8 @@ button {
 
 button.sign-up {
     max-width: 100px;
-    background: royalblue;
-    border: 1px solid royalblue;
+    background: #3882F6;
+    border: 1px solid #3882F6;
     color: white;
 }
 
